@@ -17,8 +17,8 @@ function findAnswer(input, target){
 
 function partTwo(input, target){
   for(let a=0; a<input.length; a++){
-    for(let b=a; b<input.length; b++){
-      for(let c=b; c<input.length; c++){
+    for(let b=0; b<input.length; b++){
+      for(let c=0; c<input.length; c++){
         if(input[a]+input[b]+input[c] === target){
           return input[a]*input[b]*input[c]
         }
