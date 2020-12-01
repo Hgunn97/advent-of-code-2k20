@@ -15,4 +15,17 @@ function findAnswer(input, target){
   }
 }
 
+function partTwo(input, target){
+  for(let a=0; a<input.length; a++){
+    for(let b=a; b<input.length; b++){
+      for(let c=b; c<input.length; c++){
+        if(input[a]+input[b]+input[c] === target){
+          return input[a]*input[b]*input[c]
+        }
+      }
+    }
+  }
+}
+
 console.log(findAnswer(dayOne, 2020))
+console.log(partTwo(dayOne, 2020))
